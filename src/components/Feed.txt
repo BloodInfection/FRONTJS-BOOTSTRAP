@@ -49,3 +49,4 @@ ReactDOM.render(
 	<Feed/>,
 	document.getElementById('root')
 )
+сосите пенис
