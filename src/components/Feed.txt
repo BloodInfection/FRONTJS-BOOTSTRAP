@@ -1,4 +1,5 @@
 import React from 'react';
+import  ReactDOM  from 'react-dom';
 	
 
 	
@@ -43,3 +44,8 @@ export default function Feed() {
 		}
 	}
 }
+
+ReactDOM.render(
+	<Feed/>,
+	document.getElementById('root')
+)

@@ -7,37 +7,6 @@ import productStussy from '../image/product_stussy_bluegray.webp'
 export default function Product() {
 	const userApiState = useSelector(state => state.userAPIreducer)
 
-	class ContentFeed extends React.Component{
-		constructor(){
-			super();
-
-			this.state = {
-				'items':[]
-			}
-		}
-
-		componentDidMount(){
-			this.getItems();
-
-		}
-		getItems(){
-			fetch('')
-			.then (results => results.json())
-			.then (results => this.setState({'items': results}));
-
-		}
-
-		render(){
-			return(
-				<ul>
-					{this.state.tmens.map(function(item,index){
-						return <h1>{item.title}</h1>
-					}
-					)}
-				</ul>
-			)
-		}
-	}
 	
 
 	return (

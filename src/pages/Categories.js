@@ -2,7 +2,7 @@ import React from 'react';
 import {Badge, Dropdown, FormControl, InputGroup, DropdownButton} from 'react-bootstrap';
 import {useSearchParams } from "react-router-dom";
 import Product from '../components/Product'
-import Feed from '../components/Feed'
+//import Feed from '../components/Feed'
 import styled from 'styled-components';
 
 export default function Categories() {

@@ -15,7 +15,9 @@ import {Brands} from './pages/Brands'
 
 function App() {
   return (
+   
     <>
+    
     <Router>
       <Navibar/>
       <Routes>

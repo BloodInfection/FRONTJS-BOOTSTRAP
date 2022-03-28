@@ -29,6 +29,9 @@ export default function Login() {
 			<Form.Group className="mb-3" controlId="formBasicPassword">
 				<Form.Label>Пароль</Form.Label>
 				<Form.Control type="password" placeholder="Пароль" />
+				<Form.Text className="text-muted">
+				Пароль должен содержать не менее 8 символов.
+				</Form.Text>
 			</Form.Group>
 			
 			
