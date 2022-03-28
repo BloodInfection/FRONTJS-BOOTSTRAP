@@ -58,7 +58,7 @@ group_right {
   background-color: rgb(153,102,203);
   border-color: rgb(153,102,203);
   box-shadow: none ;
-  color: rgba(240, 248, 255, 0.445);
+  color: rgba(255, 255, 255, 0.445);
   }
   
 .btn, .btn:focus,  .show > .btn-light.dropdown-toggle:focus, .btn-light.dropdown-toggle {
@@ -70,8 +70,8 @@ group_right {
 
 .btn-long {
   color: black;
-  background-color:  aliceblue;
-  border-color:  aliceblue;
+  background-color:   #fff;
+  border-color:   #fff;
   box-shadow: none ;
   opacity: 0.7;
   line-height: 42px; 
@@ -81,8 +81,8 @@ group_right {
   transition: .3s all;}
 
 .btn-long:active, .btn-long:hover, .btn-long:checked {
-  background-color:  aliceblue;
-  border-color:  aliceblue;
+  background-color:   #fff;
+  border-color:   #fff;
   box-shadow: none ;
   color: black;
   opacity: 0.9;
@@ -102,7 +102,17 @@ group_right {
 }
 
     
-
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+ 
+  }
 
 
 

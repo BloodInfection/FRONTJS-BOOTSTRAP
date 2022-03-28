@@ -1,0 +1,45 @@
+import React from 'react';
+	
+
+	
+export default function Feed() {
+	class Feed extends React.Component{
+
+		
+		results = {
+			"Sometching": "oheah",
+			"title": "hello" }
+
+		constructor(){
+			super();
+
+			
+
+			this.state = {
+				'items':[]
+			}
+		}
+
+		componentDidMount(){
+			this.getItems();
+
+		}
+		//getItems(){
+			//fetch('')
+			//.then (results => results.json())
+			//.then (results => this.setState({'items': results}));
+
+		//}
+
+		render(){
+			return(
+				<ul>
+					{this.state.tmens.map(function(item,index){
+						return <h1>{item.title}</h1>
+					}
+					)}
+				</ul>
+			);
+		}
+	}
+}

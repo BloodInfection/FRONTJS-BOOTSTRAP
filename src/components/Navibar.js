@@ -8,10 +8,13 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 a, .navbar-brand, .navbar-nav, .nav-link{
-	color: aliceblue;
+	color:  #fff;
 	text-decoration: none;
 	&:hover {
-		color: rgba(240, 248, 255, 0.445);
+		color: rgba(255, 255, 255, 0.445);
+	}
+	&:active {
+		color: rgba(255, 255, 255, 0.445);
 	}
 }
 
