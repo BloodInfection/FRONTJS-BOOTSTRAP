@@ -27,7 +27,7 @@ export const Brands = () => (
 
 
 <Styles>
-<Badge bg="secondary">Страница брендов</Badge>
+<Badge bg="secondary">Страница брендов да</Badge>
 	<Container>
 		
 
