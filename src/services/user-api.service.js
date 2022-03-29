@@ -21,9 +21,9 @@ class UserApiService {
 		  return response.data;
 	  });
   }
-  register(name, password, surname, patronymic, phone, email) {
+  register(email, name, password,  patronymic,  phone, surname   ) {
     return axios
-	.post(USERAPI_URL + "user", { name, password, surname, patronymic, phone, email })
+	.post(USERAPI_URL + "user", { email, name, password,  patronymic,  phone, surname  })
 	.then((response)=>{
 		if (response.data) {
       localStorage.setItem("user", JSON.stringify(response.data));

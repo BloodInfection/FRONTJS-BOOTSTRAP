@@ -10,18 +10,19 @@ class Register extends Component {
 	constructor(props) {
 	  super(props);
 	  this.state = {
-		firstname : "",
-		surname: "",
+		email: "",
+		name : "",
+		password: "",
 		patronymic:"",
 		phone:"",
-		email: "",
-		password: "",
+		surname: "",
+		
 		loading: false,
 	  };
 	  
 	  this.handleReg = this.handleReg.bind(this); // Эта привязка обязательна для работы `this` в колбэке.
 	  
-	  this.onChangeFirstname = this.onChangeFirstname.bind(this); // Ключевое слово this обычно ссылается на элемент JavaScript в зависимости от области или контекста его использования. 
+	  this.onChangeName = this.onChangeName.bind(this); // Ключевое слово this обычно ссылается на элемент JavaScript в зависимости от области или контекста его использования. 
 	  this.onChangeSurname = this.onChangeSurname.bind(this);
 	  this.onChangePatronymic = this.onChangePatronymic.bind(this);
 	  this.onChangePhone = this.onChangePhone.bind(this);
@@ -30,9 +31,9 @@ class Register extends Component {
 	  this.onChangePassword = this.onChangePassword.bind(this);
 	}
 
-	onChangeFirstname(e) { //e — это синтетическое событие.
+	onChangeName(e) { //e — это синтетическое событие.
 		this.setState({
-			firstname: e.target.value,
+			name: e.target.value,
 		});
 	  }
 
@@ -72,8 +73,8 @@ class Register extends Component {
 	  });
 	  const { dispatch } = this.props;
 
-	  console.log("	ВВЕДЕННЫЕ ДАННЫЕ ", this.state.email, this.state.password, this.state.firstname, this.state.surname, this.state.patronymic, this.state.phone )
-	  dispatch(register(this.state.email, this.state.password, this.state.firstname, this.state.surname, this.state.patronymic, this.state.phone)).then(() => {
+	  console.log("	ВВЕДЕННЫЕ ДАННЫЕ ", this.state.email, this.state.name,  this.state.password,  this.state.patronymic,  this.state.phone, this.state.surname )
+	  dispatch(register(this.state.email, this.state.name,  this.state.password,  this.state.patronymic,  this.state.phone, this.state.surname)).then(() => {
 		this.setState({
 			loading: false,
 		  });
@@ -100,9 +101,9 @@ class Register extends Component {
             )}
 		<Form onSubmit={this.handleReg}>
 			
-			<Form.Group className="mb-3" controlId="formBasicFirstname">
+			<Form.Group className="mb-3" controlId="formBasicname">
 				<Form.Label>Имя</Form.Label>
-				<Form.Control type="text" placeholder="Имя" value={this.state.firstname} onChange={this.onChangeFirstname}/>
+				<Form.Control type="text" placeholder="Имя" value={this.state.name} onChange={this.onChangeName}/>
 			
 			</Form.Group>
 
