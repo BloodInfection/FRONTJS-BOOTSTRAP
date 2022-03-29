@@ -8,8 +8,8 @@ import {
 } from "../actions/types";
 import UserAPIservice from "../services/user-api.service";
 
-export const register = (username, email, password) => (dispatch) => {
-  return UserAPIservice.register(username, email, password).then(
+export const register = (email, name, password, patronymic, phone, surname) => (dispatch) => {
+  return UserAPIservice.register(email, name, password, patronymic, phone, surname).then(
     (response) => {
       dispatch({
         type: REGISTER_SUCCESS,
