@@ -132,6 +132,15 @@ export default function Home() { //экспорт по умолчанию ф-и�
 			return Promise.reject();
 		});
 
+	/*ProductAPIservice.colorDelete(7).then(  //ПРОСТО ДЛЯ ПРИМЕРА id 
+		(response) => { 
+			console.log("colorDelete",response)
+			return Promise.resolve(); //промис успешно завершен, остановка выполнения ф-ии
+		},
+		(error) => {
+			console.log('ошибка colorDelete',error)
+			return Promise.reject();
+		}); */
 	
 
 	return(
