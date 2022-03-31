@@ -103,7 +103,23 @@ class ProductApiService {
     .then((response)=>{
       return response.data;
     }); 
-    }
+  }
+
+  colorDelete (id) {
+      return axios //класс с методами:
+      .delete(PRODUCTRAPI_URL + "color", {params:{id}})
+      .then((response)=>{
+        return response.data;
+      }); 
+  }
+
+  colorCreate (name) {
+      return axios //класс с методами:
+      .post(PRODUCTRAPI_URL + "color", {name})
+      .then((response)=>{
+        return response.data;
+      }); 
+  }
 
   
 
