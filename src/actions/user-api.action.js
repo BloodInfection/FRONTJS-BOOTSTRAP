@@ -66,10 +66,11 @@ export const login = (email, password) => (dispatch) => {
   );
 };
 export const logout = () => (dispatch) => {
+  dispatch({ //когда вызываем диспатч кладется новая инфа в редьюсер. Сессия протухла, меня там уже нет, но  я и так уже вышла. Из редьюсера они удалялись только в случае успеха логаута, а не в случае просроченной сессии.
+    type: LOGOUT,
+  });
   UserAPIservice.logout().then(() => {
-    dispatch({
-      type: LOGOUT,
-    });
+  
     return Promise.resolve();
   },
   (error) => {
