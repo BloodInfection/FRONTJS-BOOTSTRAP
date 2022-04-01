@@ -17,13 +17,13 @@ class UserApiService {
 	return axios
 	  .post(USERAPI_URL + "logout", {})
 	  .then((response) => {
-		  localStorage.removeItem("user");
+		 
 		  return response.data;
 	  });
   }
-  register(email, name, password,  patronymic,  phone, surname   ) {
+  register(email, name, password,  patronymic,  phone, surname) {
     return axios
-	.post(USERAPI_URL + "user", { email, name, password,  patronymic,  phone, surname  })
+	.post(USERAPI_URL + "user", { email, name, password,  patronymic,  phone, surname})
 	.then((response)=>{
 		if (response.data) {
       localStorage.setItem("user", JSON.stringify(response.data));
