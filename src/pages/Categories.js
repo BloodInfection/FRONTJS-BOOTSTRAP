@@ -4,6 +4,8 @@ import {useSearchParams } from "react-router-dom";
 import Product from '../components/Product'
 //import Feed from '../components/Feed'
 import styled from 'styled-components';
+import productStussy from '../image/product_stussy_bluegray.webp'
+
 
 export default function Categories() {
 	
@@ -90,7 +92,7 @@ export default function Categories() {
 			</Styles>
 
 		
-		<Product/>
+		<Product description = "Футболка PIG. DYED INSIDE OUT CREW LAVENDER" name ="STUSSY" image ={productStussy}/>
 
 	
 		</>

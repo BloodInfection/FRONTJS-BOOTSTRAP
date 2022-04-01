@@ -141,11 +141,11 @@ export default function Home() { //экспорт по умолчанию ф-и�
 			console.log('ошибка colorDelete',error)
 			return Promise.reject();
 		}); */
-	
+	//Levi's Skateboarding Fred Perry Obey Stussy
 
 	return(
 		<>
-	<Slider/>
+	<Slider caption1="Levi's Skateboarding" caption2="Fred Perry" captiom3="Obey" caption4="Stussy"/>
 	</>
 	)
 	}
