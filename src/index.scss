@@ -130,3 +130,26 @@ border-color: transparent ;
 
 
 }
+
+.center{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.search-title{
+  text-align: center;
+  margin: 0 auto 24px;
+  padding: 0 16px;
+}
+.nav-link a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link a:hover{
+  color: rgb(82, 82, 82);
+  text-decoration: none;
+}
