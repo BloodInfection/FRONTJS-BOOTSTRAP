@@ -11,11 +11,11 @@ export default function Product(props) {
 	return (
 	<>
 	<Card style={{ width: '16rem' , margin: '20px'}}data-testid="product-card"> 
-  		<Card.Img variant="top" src={props.image} />
+  		<Card.Img variant="top" src={props.url} />
   		<Card.Body>
     		<Card.Title>{props.name}</Card.Title>
     		<Card.Text>
-			{props.description}
+			
     		</Card.Text>
     		
 			
