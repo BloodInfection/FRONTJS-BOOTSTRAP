@@ -5,10 +5,13 @@ import AdminNaviBar from '../components/AdminNavibar';
 export default function AdminCategories(){
     return(
 		<>
-	<Container>
+	<Container style={{ padding: '5%' }}>
 		<Row>
 			<Col> <AdminNaviBar></AdminNaviBar> </Col>
-			<Col> Категории </Col>
+				<Col> 
+					<div>Категории</div>
+					
+				</Col>
 			
 		</Row>
 		

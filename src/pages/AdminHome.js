@@ -50,10 +50,10 @@ export default function Home() { //экспорт по умолчанию ф-и�
 
 	return(
 		<>
-	<Container>
+	<Container style={{ padding: '5%' }}>
 		<Row>
 			<Col> <AdminNaviBar></AdminNaviBar> </Col>
-			<Col> Home </Col>
+			<Col> Страница администратора </Col>
 			
 		</Row>
 		

@@ -5,7 +5,7 @@ import AdminNaviBar from '../components/AdminNavibar';
 export default function AdminSizes(){
     return(
 		<>
-	<Container>
+	<Container style={{ padding: '5%' }}>
 		<Row>
 			<Col> <AdminNaviBar></AdminNaviBar> </Col>
 			<Col> Размеры </Col>
