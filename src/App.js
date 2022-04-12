@@ -1,4 +1,5 @@
 import Navibar from './components/Navibar'
+import Footer from './components/Footer'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Profile from './pages/Profile'
@@ -37,7 +38,7 @@ function App() {
     
     <Router>
       <Navibar/>
-      
+    <Footer/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/signin" element={<Login/>}></Route>
@@ -66,9 +67,10 @@ function App() {
     
       </Routes>
 
-
+     
 
     </Router>
+   
     </>
   );
 }

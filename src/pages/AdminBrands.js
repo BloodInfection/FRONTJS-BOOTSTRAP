@@ -5,7 +5,7 @@ import AdminNaviBar from '../components/AdminNavibar';
 export default function AdminBrands(){
     return(
 		<>
-	<Container>
+	<Container style={{ padding: '5%' }}>
 		<Row>
 			<Col> <AdminNaviBar></AdminNaviBar> </Col>
 			<Col> Бренды </Col>

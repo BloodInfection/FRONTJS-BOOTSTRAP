@@ -42,7 +42,7 @@ export default function Categories() {
 		<>
 	
 		<Badge bg="secondary">Страница категорий c категорией = {category} и брендом = {brand}</Badge>
-		<Styles>
+		<Styles >
 	
 		<InputGroup className="mr-3" >
 			<DropdownButton 
@@ -92,7 +92,7 @@ export default function Categories() {
 			</Styles>
 
 		
-		<Product description = "Футболка PIG. DYED INSIDE OUT CREW LAVENDER" name ="STUSSY" image ={productStussy}/>
+		<Product description = "Футболка PIG. DYED INSIDE OUT CREW LAVENDER" name ="STUSSY" url ={productStussy}/>
 
 	
 		</>

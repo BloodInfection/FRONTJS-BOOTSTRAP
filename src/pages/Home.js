@@ -2,6 +2,7 @@ import {React, Component} from 'react';
 import Slider from '../components/Slider'
 import ProductAPIservice from "../services/product-api.service";
 import {Container,} from 'react-bootstrap';
+import Footer from '../components/Footer'
 
 import Product from '../components/Product';
 
@@ -44,7 +45,7 @@ class Home extends Component {
 				console.log(item.url);
 				return (
 				<Container>
-				<Product name = {item.name} description = {item.description} url = {item.url}/> 
+				<Product name = {item.name}  url = {item.url}/> 
 				
 				</Container>)
 				
@@ -52,7 +53,7 @@ class Home extends Component {
 		}
 		return (
 			<>
-	
+					
 				<Slider caption1="Levi's Skateboarding" caption2="Fred Perry" captiom3="Obey" caption4="Stussy"/>
 				<Container>
 				{buildItems()}
